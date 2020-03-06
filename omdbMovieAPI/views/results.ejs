@@ -1,0 +1,18 @@
+<h1>results page</h1>
+<table>
+<thead>
+  <% Data.Search.forEach(function(movie){ %>
+  <table border = "3">
+  <tr>
+   <th>MovieTitle</th>
+   <th>Img</th>
+  </tr>
+</thead>  
+<tbody>
+  <tr>
+  <td> <%= movie.Title%></td>
+  <td><img src = "<%= movie.Poster%>"> </td> 
+</tr>
+</tbody>
+  </table>
+<%})%>
